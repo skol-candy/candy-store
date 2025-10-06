@@ -183,7 +183,6 @@ markdown_extensions:
 nav:
   - Welcome: 
     - index.md
-    - Skol Candy Lab:
-      - ea/etail-ai.md
+    - Skol Candy Lab: ea/etail-ai.md
 #    - Labs 1 - 6: ea/labs.md
 #    - Skol Candy: ea/etail-ai.md
