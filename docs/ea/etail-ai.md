@@ -4,17 +4,27 @@ hide:
     - toc
 ---
 
-# Skol Candy Event Automation with AI - TechXchange 2025 - Lab
+# Skol Candy Event Automation with AI - Lab
 
 ## Part 1: Event Exploration
 
 First, you will familiarize yourself with the storefront application and view events that are generated in the backend.  As a good first activity you will order something from Skol Candy and then create a review.  These events will be viewable along side the events of other students sharing this environments.
 
+!!! Tip "URLs Used in this Lab"
+    The URLs you will use to access the online store and Event Automation interfaces have been shortened for your convenience.  They are clickable in this document, but if you are working on a separate system or from hard copy use the below:
+
+    - Skol Candy Store:  ibm.biz/skol-candy
+    - Lab Instructions: ibm.biz/skol-candy-lab
+    - Event Streams: ibm.biz/skol-candy-es
+    - Event Processing: ibm.biz/skol-candy-ep
+
 ### :mans_shoe: Step 1: Generate e-Tail Activity
 
-![skol-candy-store-gif](./images/skol-candy-animated.gif){ align=right width=60% }
+<!-- ![skol-candy-store-gif](./images/skol-candy-animated.gif){ align=right width=60% }
 
-From your browser, access the [Skol Candy](https://ecommerce-frontend-route-juju-shop.myvpc-cluster-139725-529e60e33d9bf482ad6b2271e6708a95-0000.us-south.containers.appdomain.cloud/){ target="_blank" } website.
+From your browser, access the [Skol Candy](https://ecommerce-frontend-route-juju-shop.myvpc-cluster-139725-529e60e33d9bf482ad6b2271e6708a95-0000.us-south.containers.appdomain.cloud/){ target="_blank" } website. -->
+
+From your browser, access the [Skol Candy](https://ibm.biz/skol-candy){ target="_blank" } website.
 
 Use **Sign Up** to create an account:
 
@@ -52,7 +62,9 @@ Scroll down to the dialog that allows you to **Write a Review**.  Create a revie
 
 The activities you just performed will be available from within the e-tail application's backend.  Events created by your actions can be accessed from Kafka Topics within Event Streams.
 
-Using the credentials given to you by the proctor, log into [Event Streams](https://es-demo-ibm-es-ui-tools.myvpc-cluster-139725-529e60e33d9bf482ad6b2271e6708a95-0000.us-south.containers.appdomain.cloud){ target="_blank" }. (Keep this window open in your browser as you will use it later in the lab)
+<!--Using the credentials given to you by the proctor, log into [Event Streams](https://es-demo-ibm-es-ui-tools.myvpc-cluster-139725-529e60e33d9bf482ad6b2271e6708a95-0000.us-south.containers.appdomain.cloud){ target="_blank" }. (Keep this window open in your browser as you will use it later in the lab) -->
+
+Using the credentials given to you by the proctor, log into [Event Streams](https://ibm.biz/skol-candy-es){ target="_blank" }. (Keep this window open in your browser as you will use it later in the lab)
 
 From the left hand nav-bar, open **Topics**.
 
@@ -76,7 +88,7 @@ This purpose of this flow is to use AI to both assess the "sentiment" of the rev
 
 ### :mans_shoe: Step 1: Create an Event Processing Flow
 
-Log into the [Event Processing UI](https://ep-demo-ibm-ep-rt-tools.myvpc-cluster-139725-529e60e33d9bf482ad6b2271e6708a95-0000.us-south.containers.appdomain.cloud){ target="_blank" } using the credentials provided to you by the proctor.  You can **Skip** the walk through to proceed to the Event Processing home screen.  (Keep this window open in your browser as you will use it later in the lab)
+Log into the [Event Processing UI](https://ibm.biz/skol-candy-ep){ target="_blank" } using the credentials provided to you by the proctor.  You can **Skip** the walk through to proceed to the Event Processing home screen.  (Keep this window open in your browser as you will use it later in the lab)
 
 !!! Info "A Note on Event Processing"
     Event Processing is built from the Apache project Flink.  Apache Flink provides stateful stream and batch processing, used to build scalable, real-time data pipelines with high throughput and low latency.  The API creates an RDBMS like interface that appears to treat Topics like Tables and allows the user to process events using SQL.  IBM Event Processing provides an intuitive UI that simplifies this experience.
@@ -160,7 +172,7 @@ Open the node for editing and name this node `Send Review Reply to Kafka`.
 
 This dialog is now expecting you to provide the connection details for the destination topic. You will now create that topic.  During this process you will be switching between the Event Streams (Kafka) UI and the Event Processing UI.  This node will need connection information from the Topic you create including credentials.
 
-Switch back to your [Event Streams](https://es-demo-ibm-es-ui-tools.myvpc-cluster-139725-529e60e33d9bf482ad6b2271e6708a95-0000.us-south.containers.appdomain.cloud){ target="_blank" } tab in your browser.  Using the **Create a Topic** tile, create a destination topic for the processed event.
+Switch back to your [Event Streams](https://ibm.biz/skol-candy-es){ target="_blank" } tab in your browser.  Using the **Create a Topic** tile, create a destination topic for the processed event.
 
   ![skol-create-topic](./images/skol-es-create-topic.png)
 
