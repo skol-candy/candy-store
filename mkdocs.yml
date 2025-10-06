@@ -20,7 +20,7 @@
 
 # Project information
 site_name: "Skol Candy"
-site_url: https://github.com/skol-candy/candy-store
+site_url: https://github.com/skol-candy/candy-store/
 site_author: John Abbott
 site_description: >-
     This lab is designed to help you enjoy learning Event Processing and AI.
@@ -157,8 +157,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: skol
-      repo: pe-bootcamp
+      user: skol-candy
+      repo: candy-store
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
@@ -183,7 +183,7 @@ markdown_extensions:
 nav:
   - Welcome: 
     - index.md
-  - Event Automation:
-    - ea/index.md
-    - Labs 1 - 6: ea/labs.md
-    - Skol Candy: ea/etail-ai.md
+    - Skol Candy Lab:
+      - ea/etail-ai.md
+#    - Labs 1 - 6: ea/labs.md
+#    - Skol Candy: ea/etail-ai.md
