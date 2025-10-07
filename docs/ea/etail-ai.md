@@ -263,3 +263,8 @@ You will see data from the original message you included in the review along wit
 
 !!! Question "What is next?"
     With AI having provided both sentiment and a sample response to the customer's review, you and your development team is ready to begin building out the rest of your use case.  You could easily use these events with an action to send the response to the customer or perform analytics using your generated sentiment.  You could even trigger responses based upon only certain sentiment.  
+
+
+!!! Note "You will need this info for Event Streams"
+     integration-admin / 598371a9aa54c0e74ba5658d3198a8
+     (The link is included above)
