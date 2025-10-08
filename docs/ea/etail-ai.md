@@ -99,7 +99,7 @@ Log into the [Event Processing UI](https://ibm.biz/skol-candy-ep){ target="_blan
     Your are working in a shared environment, likely with other students.  Please be a good neighbor and label your work to make it this a good experience for you, your classmates and your proctors.  Thank you!!
 
 - You will be asked to give the flow a unique name.  Name the flow `xyz-review` replacing `xyz` with your initials (or other short identifier).  Use similar naming standards throughout the lab.
-- Choose the pre-configured **Reviews** and continue with **Next** (this Event Source contains review events from the Skol Candy store)
+- Choose the pre-configured **product-reviews** topic and continue with **Next** (this Event Source contains review events from the Skol Candy store)
 - Name this node `reviews`
 - Accept the rest of the details and click **Configure**
 
